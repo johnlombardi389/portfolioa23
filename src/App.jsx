@@ -1,7 +1,13 @@
+// Components
+import Nav from "./components/Nav";
+import Portfolio from "./components/Portfolio";
+import Project from "./components/Project";
+
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <Nav />
+      <Portfolio />
     </div>
   );
 }
