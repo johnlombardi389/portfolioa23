@@ -10,37 +10,39 @@ import johnlogo from "../assets/johnlogo.png";
 const Nav = () => {
   return (
     <StyledNav>
-      <img src={johnlogo} alt="John's Logo" />
+      <LogoSection>
+        <img src={johnlogo} alt="John's Logo" />
 
-      <SocialNav>
-        <SocialLink>
-          <motion.a
-            href="https://www.linkedin.com/in/johnlombardi389/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <BsLinkedin />
-          </motion.a>
-        </SocialLink>
-        <SocialLink>
-          <motion.a
-            href="https://github.com/johnlombardi389"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <BsGithub />
-          </motion.a>
-        </SocialLink>
-        <SocialLink>
-          <motion.a
-            href="mailto:johnlombardi389@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaEnvelope />
-          </motion.a>
-        </SocialLink>
-      </SocialNav>
+        <SocialNav>
+          <SocialLink>
+            <motion.a
+              href="https://www.linkedin.com/in/johnlombardi389/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsLinkedin />
+            </motion.a>
+          </SocialLink>
+          <SocialLink>
+            <motion.a
+              href="https://github.com/johnlombardi389"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsGithub />
+            </motion.a>
+          </SocialLink>
+          <SocialLink>
+            <motion.a
+              href="mailto:johnlombardi389@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaEnvelope />
+            </motion.a>
+          </SocialLink>
+        </SocialNav>
+      </LogoSection>
 
       <MyName>John Lombardi</MyName>
     </StyledNav>
@@ -50,9 +52,16 @@ const Nav = () => {
 const StyledNav = styled(motion.nav)`
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 0 1rem;
+`;
+
+const LogoSection = styled(motion.div)`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
   img {
     width: auto;
@@ -102,8 +111,8 @@ const SocialLink = styled(motion.li)`
 `;
 
 const MyName = styled(motion.h1)`
-  font-size: 1.5rem;
-  margin: 0;
+  font-size: 2.25rem;
+  color: green;
 `;
 
 export default Nav;
