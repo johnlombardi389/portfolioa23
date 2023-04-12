@@ -66,7 +66,7 @@ const LogoSection = styled(motion.div)`
   img {
     width: auto;
     height: 1.5rem;
-    padding-right: 0.5rem;
+    padding-right: 1rem;
   }
 `;
 
@@ -106,8 +106,7 @@ const SocialNav = styled(motion.ul)`
 `;
 
 const SocialLink = styled(motion.li)`
-  padding: 0.5rem;
-  margin: 0.5rem;
+  padding: 1rem;
 `;
 
 const MyName = styled(motion.h1)`

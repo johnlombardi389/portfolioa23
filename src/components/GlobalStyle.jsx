@@ -24,6 +24,12 @@ font-weight: 700; */
     font-weight: 600;
     text-transform: uppercase;
   }
+
+  h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+  }
 `;
 
 export default GlobalStyles;
