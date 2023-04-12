@@ -5,10 +5,13 @@ import { motion } from "framer-motion";
 // Icons
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { FaEnvelope } from "react-icons/fa";
+import johnlogo from "../assets/johnlogo.png";
 
 const Nav = () => {
   return (
-    <nav>
+    <StyledNav>
+      <img src={johnlogo} alt="John's Logo" />
+
       <SocialNav>
         <SocialLink>
           <motion.a
@@ -38,9 +41,25 @@ const Nav = () => {
           </motion.a>
         </SocialLink>
       </SocialNav>
-    </nav>
+
+      <MyName>John Lombardi</MyName>
+    </StyledNav>
   );
 };
+
+const StyledNav = styled(motion.nav)`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+
+  img {
+    width: auto;
+    height: 1.5rem;
+    padding-right: 0.5rem;
+  }
+`;
 
 const SocialNav = styled(motion.ul)`
   display: flex;
@@ -80,6 +99,11 @@ const SocialNav = styled(motion.ul)`
 const SocialLink = styled(motion.li)`
   padding: 0.5rem;
   margin: 0.5rem;
+`;
+
+const MyName = styled(motion.h1)`
+  font-size: 1.5rem;
+  margin: 0;
 `;
 
 export default Nav;
