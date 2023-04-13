@@ -93,8 +93,8 @@ const Portfolio = () => {
 
 const GridContainer = styled(motion.div)`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-gap: 2rem;
   margin: 1rem;
 
   .pink {
@@ -119,6 +119,9 @@ const GridItem = styled(motion.div)`
   background-color: blue;
   cursor: pointer;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 
   img {
     padding: 1rem;
@@ -132,6 +135,10 @@ const CardInfo = styled(motion.div)`
   display: flex;
   align-items: baseline;
   margin-bottom: 1rem;
+
+  h3 {
+    margin-right: 2rem;
+  }
 
   ul {
     list-style: none;

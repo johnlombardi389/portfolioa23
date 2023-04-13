@@ -19,6 +19,10 @@ font-weight: 700; */
     box-sizing: border-box;
   }
 
+  html {
+    background-color: #0E1624;
+  }
+
   h1 {
     font-family: 'Kanit', sans-serif;
     font-weight: 600;
