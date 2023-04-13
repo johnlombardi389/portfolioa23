@@ -54,7 +54,8 @@ const StyledNav = styled(motion.nav)`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem 3rem;
+  margin: 3rem auto;
+  max-width: 1800px;
 `;
 
 const LogoSection = styled(motion.div)`

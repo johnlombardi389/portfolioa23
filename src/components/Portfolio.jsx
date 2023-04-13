@@ -155,6 +155,7 @@ const CardInfo = styled(motion.div)`
 
   h3 {
     margin-right: 2rem;
+    color: #152339;
   }
 
   ul {
@@ -171,6 +172,7 @@ const CardInfo = styled(motion.div)`
       font-family: "Nunito Sans", sans-serif;
       font-weight: 400;
       font-size: 0.75rem;
+      color: #0f3962;
     }
   }
 `;
