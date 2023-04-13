@@ -99,14 +99,30 @@ const GridContainer = styled(motion.div)`
 
   .pink {
     background-color: #fb4c8b;
+
+    &:hover {
+      box-shadow: rgba(251, 76, 139, 0.15) 0px 8px 24px,
+        rgba(251, 76, 139, 0.15) 0px 16px 56px,
+        rgba(251, 76, 139, 0.15) 0px 24px 80px;
+    }
   }
 
   .blue {
     background-color: #19a8c5;
+    &:hover {
+      box-shadow: rgba(25, 168, 197, 0.15) 0px 8px 24px,
+        rgba(25, 168, 197, 0.15) 0px 16px 56px,
+        rgba(25, 168, 197, 0.15) 0px 24px 80px;
+    }
   }
 
   .yellow {
     background-color: #f9c04d;
+    &:hover {
+      box-shadow: rgba(249, 192, 77, 0.15) 0px 8px 24px,
+        rgba(249, 192, 77, 0.15) 0px 16px 56px,
+        rgba(249, 192, 77, 0.15) 0px 24px 80px;
+    }
   }
 `;
 
