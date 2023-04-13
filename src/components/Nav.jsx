@@ -14,7 +14,7 @@ const Nav = () => {
         <img src={johnlogo} alt="John's Logo" />
 
         <SocialNav>
-          <SocialLink>
+          <motion.li>
             <motion.a
               href="https://www.linkedin.com/in/johnlombardi389/"
               target="_blank"
@@ -22,8 +22,8 @@ const Nav = () => {
             >
               <BsLinkedin />
             </motion.a>
-          </SocialLink>
-          <SocialLink>
+          </motion.li>
+          <motion.li>
             <motion.a
               href="https://github.com/johnlombardi389"
               target="_blank"
@@ -31,8 +31,8 @@ const Nav = () => {
             >
               <BsGithub />
             </motion.a>
-          </SocialLink>
-          <SocialLink>
+          </motion.li>
+          <motion.li>
             <motion.a
               href="mailto:johnlombardi389@gmail.com"
               target="_blank"
@@ -40,7 +40,7 @@ const Nav = () => {
             >
               <FaEnvelope />
             </motion.a>
-          </SocialLink>
+          </motion.li>
         </SocialNav>
       </LogoSection>
 
@@ -54,7 +54,7 @@ const StyledNav = styled(motion.nav)`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0 1rem;
+  margin: 1rem 3rem;
 `;
 
 const LogoSection = styled(motion.div)`
@@ -75,15 +75,12 @@ const SocialNav = styled(motion.ul)`
   justify-content: flex-start;
   align-items: center;
   list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
 
   li {
-    margin: 0.5rem;
-    padding: 0.5rem;
-    color: green;
+    margin: 0 0.5rem;
+    padding: 0 0.5rem;
+    color: #0f3962;
+    cursor: pointer;
 
     a {
       text-decoration: none;
@@ -101,17 +98,13 @@ const SocialNav = styled(motion.ul)`
     display: block;
     width: 7rem;
     height: 0.1rem;
-    background-color: green;
+    background-color: #0f3962;
   }
-`;
-
-const SocialLink = styled(motion.li)`
-  padding: 1rem;
 `;
 
 const MyName = styled(motion.h1)`
   font-size: 2.25rem;
-  color: green;
+  color: #0f3962;
 `;
 
 export default Nav;

@@ -93,9 +93,10 @@ const Portfolio = () => {
 
 const GridContainer = styled(motion.div)`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  grid-gap: 2rem;
-  margin: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 3rem;
+  margin: 3rem auto;
+  max-width: 1800px;
 
   .pink {
     background-color: #fb4c8b;
