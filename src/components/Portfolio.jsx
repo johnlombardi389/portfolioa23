@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 // Style
 import styled from "styled-components";
 import { motion } from "framer-motion";
@@ -16,13 +18,25 @@ import projectData from "./projectData";
 const Portfolio = (projectInfo) => {
   const data = projectData();
 
+  const [selectedProject, setSelectedProject] = useState(null);
+
   return (
     <div>
       {/* {isProjectClicked? <Project /> : } */}
 
+      {selectedProject && (
+        <div>
+          <h3>Hello there new component {selectedProject}</h3>
+        </div>
+      )}
+
       <GridContainer>
         {data.map((project) => (
-          <GridItem key={project.id} className={project.color}>
+          <GridItem
+            key={project.id}
+            className={project.color}
+            onClick={() => setSelectedProject(project.id)}
+          >
             <img src={project.image} alt={project.title} />
             <CardInfo>
               <h3>{project.title}</h3>
