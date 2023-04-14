@@ -119,7 +119,7 @@ const CardInfo = styled(motion.div)`
       padding: 0.5rem;
       font-family: "Nunito Sans", sans-serif;
       font-weight: 400;
-      font-size: 0.75rem;
+      font-size: 0.85rem;
       color: #0f3962;
     }
   }
