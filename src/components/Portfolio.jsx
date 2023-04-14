@@ -2,90 +2,38 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-// Images
-import layoutGen from "../assets/layoutGen.png";
-import musicPlay from "../assets/musicPlay.png";
-import pixelSketch from "../assets/pixelSketch.png";
-import rockPaper from "../assets/rockPaper.png";
-import signUp from "../assets/signUp.png";
-import travelApp from "../assets/travelApp.png";
+// // Images
+// import layoutGen from "../assets/layoutGen.png";
+// import musicPlay from "../assets/musicPlay.png";
+// import pixelSketch from "../assets/pixelSketch.png";
+// import rockPaper from "../assets/rockPaper.png";
+// import signUp from "../assets/signUp.png";
+// import travelApp from "../assets/travelApp.png";
 
-const Portfolio = () => {
+// Project Data
+import projectData from "./projectData";
+
+const Portfolio = (projectInfo) => {
+  const data = projectData();
+
   return (
     <div>
+      {/* {isProjectClicked? <Project /> : } */}
+
       <GridContainer>
-        <GridItem className="pink">
-          <img src={layoutGen} alt="Layout Generator" />
-          <CardInfo>
-            <h3>Layout Generator</h3>
-            <ul>
-              <li>React</li>
-              <li>JavaScript</li>
-              <li>CSS</li>
-              <li>Figma</li>
-            </ul>
-          </CardInfo>
-        </GridItem>
-        <GridItem className="blue">
-          <img src={signUp} alt="Layout Generator" />
-          <CardInfo>
-            <h3>Sign Up</h3>
-            <ul>
-              <li>React</li>
-              <li>JavaScript</li>
-              <li>CSS</li>
-              <li>Figma</li>
-            </ul>
-          </CardInfo>
-        </GridItem>
-        <GridItem className="yellow">
-          <img src={musicPlay} alt="Layout Generator" />
-          <CardInfo>
-            <h3>Music Player</h3>
-            <ul>
-              <li>React</li>
-              <li>JavaScript</li>
-              <li>CSS</li>
-              <li>Figma</li>
-            </ul>
-          </CardInfo>
-        </GridItem>
-        <GridItem className="blue">
-          <img src={travelApp} alt="Layout Generator" />
-          <CardInfo>
-            <h3>Travel App</h3>
-            <ul>
-              <li>React</li>
-              <li>JavaScript</li>
-              <li>CSS</li>
-              <li>Figma</li>
-            </ul>
-          </CardInfo>
-        </GridItem>
-        <GridItem className="yellow">
-          <img src={pixelSketch} alt="Layout Generator" />
-          <CardInfo>
-            <h3>Pixel Sketch</h3>
-            <ul>
-              <li>React</li>
-              <li>JavaScript</li>
-              <li>CSS</li>
-              <li>Figma</li>
-            </ul>
-          </CardInfo>
-        </GridItem>
-        <GridItem className="pink">
-          <img src={rockPaper} alt="Layout Generator" />
-          <CardInfo>
-            <h3>RPS Game</h3>
-            <ul>
-              <li>React</li>
-              <li>JavaScript</li>
-              <li>CSS</li>
-              <li>Figma</li>
-            </ul>
-          </CardInfo>
-        </GridItem>
+        {data.map((project) => (
+          <GridItem key={project.id} className={project.color}>
+            <img src={project.image} alt={project.title} />
+            <CardInfo>
+              <h3>{project.title}</h3>
+              <ul>
+                {project.tools.map((tool) => (
+                  <li>{tool}</li>
+                ))}
+              </ul>
+            </CardInfo>
+          </GridItem>
+        ))}
       </GridContainer>
     </div>
   );
