@@ -24,9 +24,9 @@ const Project = ({ selectedData }) => {
       ))}
 
       <ProjectDetails>
-        <h4>Toolkit</h4>
         {selectedData.map((project) => (
           <SkillsList key={project.id}>
+            <h4>{project.title} Toolkit</h4>
             <ul>
               {project.toolkitIcons.map((icon, index) => (
                 <li key={index}>
@@ -102,7 +102,7 @@ const ProjectDetails = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
 
   h4 {
     padding-bottom: 3rem;
