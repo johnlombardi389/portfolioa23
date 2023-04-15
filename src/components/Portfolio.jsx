@@ -4,14 +4,6 @@ import { useState } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-// // Images
-// import layoutGen from "../assets/layoutGen.png";
-// import musicPlay from "../assets/musicPlay.png";
-// import pixelSketch from "../assets/pixelSketch.png";
-// import rockPaper from "../assets/rockPaper.png";
-// import signUp from "../assets/signUp.png";
-// import travelApp from "../assets/travelApp.png";
-
 // Project Data
 import projectData from "./projectData";
 
@@ -20,14 +12,21 @@ const Portfolio = (projectInfo) => {
 
   const [selectedProject, setSelectedProject] = useState(null);
 
+  const selectedData = data.filter((project) => project.id === selectedProject);
+
   return (
     <div>
-      {/* {isProjectClicked? <Project /> : } */}
-
       {selectedProject && (
-        <div>
-          <h3>Hello there new component {selectedProject}</h3>
-        </div>
+        <ProjectView>
+          {selectedData.map((project) => (
+            <ProjectView>
+              <img src={project.image} alt={project.title} />
+              <div>
+                <h3>Hello there new component {selectedProject}</h3>
+              </div>
+            </ProjectView>
+          ))}
+        </ProjectView>
       )}
 
       <GridContainer>
@@ -52,6 +51,22 @@ const Portfolio = (projectInfo) => {
     </div>
   );
 };
+
+const ProjectView = styled(motion.div)`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+
+  img {
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+`;
 
 const GridContainer = styled(motion.div)`
   display: grid;
