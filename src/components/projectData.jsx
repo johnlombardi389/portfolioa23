@@ -15,6 +15,8 @@ const projectData = () => [
     tools: ["React", "JavaScript", "CSS", "HTML"],
     color: "pink",
     image: layoutGen,
+    demo: "https://johnlombardi389.github.io/layout-generator/",
+    github: "https://github.com/johnlombardi389/layout-generator",
   },
   {
     id: 2,
@@ -23,6 +25,8 @@ const projectData = () => [
     tools: ["Python", "Node", "Express", "HTML"],
     color: "blue",
     image: signUp,
+    demo: "https://johnlombardi389.github.io/music-player/",
+    github: "https://github.com/johnlombardi389/music-player",
   },
   {
     id: 3,
@@ -31,6 +35,8 @@ const projectData = () => [
     tools: ["Figma", "Flask", "Express", "HTML"],
     color: "yellow",
     image: musicPlay,
+    demo: "https://johnlombardi389.github.io/music-player/",
+    github: "https://github.com/johnlombardi389/music-player",
   },
   {
     id: 4,
@@ -39,6 +45,8 @@ const projectData = () => [
     tools: ["Photoshop", "Git", "GitHub", "VS Code"],
     color: "blue",
     image: travelApp,
+    demo: "https://johnlombardi389.github.io/music-player/",
+    github: "https://github.com/johnlombardi389/music-player",
   },
   {
     id: 5,
@@ -47,6 +55,8 @@ const projectData = () => [
     tools: ["JavaScript", "SASS", "CSS", "HTML"],
     color: "yellow",
     image: pixelSketch,
+    demo: "https://johnlombardi389.github.io/pixel-sketch/",
+    github: "https://github.com/johnlombardi389/pixel-sketch",
   },
   {
     id: 6,
@@ -55,6 +65,8 @@ const projectData = () => [
     tools: ["JavaScript", "Illustrator", "Figma", "HTML"],
     color: "pink",
     image: rockPaper,
+    demo: "https://johnlombardi389.github.io/music-player/",
+    github: "https://github.com/johnlombardi389/music-player",
   },
 ];
 

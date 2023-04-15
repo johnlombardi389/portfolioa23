@@ -35,7 +35,7 @@ const Project = ({ selectedData }) => {
 
 const ProjectView = styled(motion.div)`
   width: 50vw;
-  height: 100%;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
