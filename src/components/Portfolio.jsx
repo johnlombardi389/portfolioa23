@@ -17,6 +17,13 @@ const Portfolio = (projectInfo) => {
 
   const selectedData = data.filter((project) => project.id === selectedProject);
 
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div>
       {selectedProject && <Project selectedData={selectedData} />}
@@ -26,7 +33,10 @@ const Portfolio = (projectInfo) => {
           <GridItem
             key={project.id}
             className={project.color}
-            onClick={() => setSelectedProject(project.id)}
+            onClick={() => {
+              setSelectedProject(project.id);
+              handleScrollToTop();
+            }}
           >
             <img src={project.image} alt={project.title} />
             <CardInfo>

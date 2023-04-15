@@ -25,6 +25,14 @@ const Project = ({ selectedData }) => {
             <div>
               <h3>{project.title}</h3>
               <p>{project.description}</p>
+              <Buttons>
+                <a href={project.demo} target="_blank">
+                  Live Demo
+                </a>
+                <a href={project.github} target="_blank">
+                  GitHub
+                </a>
+              </Buttons>
             </div>
           </ProjectView>
         ))}
@@ -47,6 +55,30 @@ const ProjectView = styled(motion.div)`
     width: 100%;
     height: auto;
     object-fit: cover;
+  }
+`;
+
+const Buttons = styled(motion.div)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 15rem;
+  margin: 2rem auto;
+
+  a {
+    display: inline-block;
+    margin: 0.5rem 0;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
   }
 `;
 
