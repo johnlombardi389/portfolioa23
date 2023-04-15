@@ -6,6 +6,18 @@ import rockPaper from "../assets/rockPaper.png";
 import signUp from "../assets/signUp.png";
 import travelApp from "../assets/travelApp.png";
 
+import {
+  SiReact,
+  SiJavascript,
+  SiSass,
+  SiCss3,
+  SiHtml5,
+  SiVite,
+  SiVisualstudiocode,
+  SiFigma,
+  SiGit,
+} from "react-icons/si";
+
 const projectData = () => [
   {
     id: 1,
@@ -17,6 +29,14 @@ const projectData = () => [
     image: layoutGen,
     demo: "https://johnlombardi389.github.io/layout-generator/",
     github: "https://github.com/johnlombardi389/layout-generator",
+    toolkit: ["JavaScript", "CSS", "HTML", "Git", "Figma"],
+    toolkitIcons: [
+      <SiJavascript />,
+      <SiCss3 />,
+      <SiHtml5 />,
+      <SiGit />,
+      <SiFigma />,
+    ],
   },
   {
     id: 2,
@@ -27,6 +47,16 @@ const projectData = () => [
     image: signUp,
     demo: "https://johnlombardi389.github.io/music-player/",
     github: "https://github.com/johnlombardi389/music-player",
+    toolkit: ["React", "JavaScript", "Sass", "CSS", "HTML", "Git", "Figma"],
+    toolkitIcons: [
+      <SiReact />,
+      <SiJavascript />,
+      <SiSass />,
+      <SiCss3 />,
+      <SiHtml5 />,
+      <SiGit />,
+      <SiFigma />,
+    ],
   },
   {
     id: 3,
@@ -37,6 +67,16 @@ const projectData = () => [
     image: musicPlay,
     demo: "https://johnlombardi389.github.io/music-player/",
     github: "https://github.com/johnlombardi389/music-player",
+    toolkit: ["React", "JavaScript", "Vite", "CSS", "HTML", "Git", "VS Code"],
+    toolkitIcons: [
+      <SiReact />,
+      <SiJavascript />,
+      <SiVite />,
+      <SiCss3 />,
+      <SiHtml5 />,
+      <SiGit />,
+      <SiVisualstudiocode />,
+    ],
   },
   {
     id: 4,
@@ -47,6 +87,16 @@ const projectData = () => [
     image: travelApp,
     demo: "https://johnlombardi389.github.io/music-player/",
     github: "https://github.com/johnlombardi389/music-player",
+    toolkit: ["Vite", "JavaScript", "Sass", "CSS", "HTML", "Git", "Figma"],
+    toolkitIcons: [
+      <SiVite />,
+      <SiJavascript />,
+      <SiSass />,
+      <SiCss3 />,
+      <SiHtml5 />,
+      <SiGit />,
+      <SiFigma />,
+    ],
   },
   {
     id: 5,
@@ -57,6 +107,14 @@ const projectData = () => [
     image: pixelSketch,
     demo: "https://johnlombardi389.github.io/pixel-sketch/",
     github: "https://github.com/johnlombardi389/pixel-sketch",
+    toolkit: ["JavaScript", "CSS", "HTML", "Git", "Figma"],
+    toolkitIcons: [
+      <SiJavascript />,
+      <SiCss3 />,
+      <SiHtml5 />,
+      <SiGit />,
+      <SiFigma />,
+    ],
   },
   {
     id: 6,
@@ -67,6 +125,14 @@ const projectData = () => [
     image: rockPaper,
     demo: "https://johnlombardi389.github.io/music-player/",
     github: "https://github.com/johnlombardi389/music-player",
+    toolkit: ["React", "JavaScript", "Sass", "Git", "Figma"],
+    toolkitIcons: [
+      <SiReact />,
+      <SiJavascript />,
+      <SiSass />,
+      <SiGit />,
+      <SiFigma />,
+    ],
   },
 ];
 
