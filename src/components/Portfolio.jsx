@@ -7,6 +7,9 @@ import { motion } from "framer-motion";
 // Project Data
 import projectData from "./projectData";
 
+// Component
+import Project from "./Project";
+
 const Portfolio = (projectInfo) => {
   const data = projectData();
 
@@ -16,18 +19,7 @@ const Portfolio = (projectInfo) => {
 
   return (
     <div>
-      {selectedProject && (
-        <ProjectView>
-          {selectedData.map((project) => (
-            <ProjectView>
-              <img src={project.image} alt={project.title} />
-              <div>
-                <h3>Hello there new component {selectedProject}</h3>
-              </div>
-            </ProjectView>
-          ))}
-        </ProjectView>
-      )}
+      {selectedProject && <Project selectedData={selectedData} />}
 
       <GridContainer>
         {data.map((project) => (
@@ -40,8 +32,8 @@ const Portfolio = (projectInfo) => {
             <CardInfo>
               <h3>{project.title}</h3>
               <ul>
-                {project.tools.map((tool) => (
-                  <li>{tool}</li>
+                {project.tools.map((tool, index) => (
+                  <li key={index}>{tool}</li>
                 ))}
               </ul>
             </CardInfo>
@@ -51,22 +43,6 @@ const Portfolio = (projectInfo) => {
     </div>
   );
 };
-
-const ProjectView = styled(motion.div)`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: green;
-
-  img {
-    padding: 1rem;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-`;
 
 const GridContainer = styled(motion.div)`
   display: grid;
