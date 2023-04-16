@@ -101,7 +101,10 @@ const projectData = () => [
   {
     id: 5,
     title: "Pixel Sketch",
-    description: "This a game to play Rock, Paper, Scissors on your computer",
+    description:
+      "Pixel Sketch is a web-based application inspired by the classic etch-a-sketch toy. The app allows users to create drawings on a digital canvas by manipulating pixels, similar to the way one would use a physical etch-a-sketch. The app is built using a combination of technologies, including vanilla JavaScript, CSS, and HTML. The project was managed and version controlled using Git, and the design of the app was created using Figma.",
+    descriptionTwo:
+      "The main feature of Pixel Sketch is its customizable canvas, which allows users to adjust the size of the canvas and the color of the pixels. Additionally, the app includes a toggle function that allows users to turn on and off a grid overlay on the canvas, giving them more precise control over their drawings. The app is designed with a simple and intuitive user interface, making it easy for anyone to start creating their own digital etch-a-sketches.",
     tools: ["JavaScript", "SASS", "CSS", "HTML"],
     color: "yellow",
     image: pixelSketch,

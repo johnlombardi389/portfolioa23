@@ -58,34 +58,36 @@ const GridContainer = styled(motion.div)`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-gap: 3rem;
-  margin: 3rem auto;
+  margin: 0 auto;
   max-width: 1800px;
 
   .pink {
     background-color: #fb4c8b;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
 
     &:hover {
-      box-shadow: rgba(251, 76, 139, 0.15) 0px 8px 24px,
-        rgba(251, 76, 139, 0.15) 0px 16px 56px,
-        rgba(251, 76, 139, 0.15) 0px 24px 80px;
+      box-shadow: 2px 2px 15px rgba(251, 76, 139, 0.75);
     }
   }
 
   .blue {
     background-color: #19a8c5;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+
     &:hover {
-      box-shadow: rgba(25, 168, 197, 0.15) 0px 8px 24px,
-        rgba(25, 168, 197, 0.15) 0px 16px 56px,
-        rgba(25, 168, 197, 0.15) 0px 24px 80px;
+      box-shadow: 2px 2px 15px rgba(25, 168, 197, 0.75);
     }
   }
 
   .yellow {
     background-color: #f9c04d;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+
     &:hover {
-      box-shadow: rgba(249, 192, 77, 0.15) 0px 8px 24px,
-        rgba(249, 192, 77, 0.15) 0px 16px 56px,
-        rgba(249, 192, 77, 0.15) 0px 24px 80px;
+      box-shadow: 2px 2px 15px rgba(249, 192, 77, 0.75);
     }
   }
 `;
@@ -99,9 +101,6 @@ const GridItem = styled(motion.div)`
   background-color: blue;
   cursor: pointer;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
-    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
-    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 
   img {
     padding: 1rem;

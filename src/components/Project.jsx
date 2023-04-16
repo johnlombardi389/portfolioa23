@@ -11,6 +11,7 @@ const Project = ({ selectedData }) => {
           <div>
             <h3>{project.title}</h3>
             <p>{project.description}</p>
+            <p>{project.descriptionTwo}</p>
             <Buttons>
               <a href={project.demo} target="_blank" className="black-btn">
                 Live Demo
@@ -62,10 +63,9 @@ const ProjectView = styled(motion.div)`
 
 const Buttons = styled(motion.div)`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-  width: 15rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 35rem;
   margin: 2rem auto;
 
   .black-btn {
@@ -78,9 +78,9 @@ const Buttons = styled(motion.div)`
 
   a {
     display: inline-block;
-    margin: 0.5rem 0;
+    margin: 0.5rem 0.5rem;
     padding: 10px 20px;
-    width: 100%;
+    width: 15rem;
     background-color: #4caf50;
     color: blue;
     text-align: center;

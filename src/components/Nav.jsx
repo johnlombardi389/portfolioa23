@@ -54,7 +54,7 @@ const StyledNav = styled(motion.nav)`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 3rem auto;
+  margin: 1rem auto 2.5rem auto;
   max-width: 1800px;
 `;
 
@@ -88,8 +88,8 @@ const SocialNav = styled(motion.ul)`
       color: inherit;
 
       svg {
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 2rem;
+        height: 2rem;
       }
     }
   }
@@ -104,7 +104,7 @@ const SocialNav = styled(motion.ul)`
 `;
 
 const MyName = styled(motion.h1)`
-  font-size: 2.25rem;
+  font-size: 3rem;
   color: #0f3962;
 `;
 
