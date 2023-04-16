@@ -85,11 +85,16 @@ const SocialNav = styled(motion.ul)`
 
     a {
       text-decoration: none;
-      color: inherit;
+      color: #0f3962;
+      transition: all 0.3s ease-in-out;
 
       svg {
         width: 2rem;
         height: 2rem;
+      }
+
+      &:hover {
+        color: #24709c;
       }
     }
   }
