@@ -2,7 +2,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-const Project = ({ selectedData }) => {
+const Project = ({ selectedData, onClose }) => {
   return (
     <div>
       {selectedData.map((project) => (
@@ -20,6 +20,7 @@ const Project = ({ selectedData }) => {
                 GitHub
               </a>
             </Buttons>
+            <button onClick={onClose}>Close Project</button>
           </div>
         </ProjectView>
       ))}

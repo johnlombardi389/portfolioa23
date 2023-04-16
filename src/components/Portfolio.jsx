@@ -24,9 +24,15 @@ const Portfolio = (projectInfo) => {
     });
   };
 
+  const handleProjectClose = () => {
+    setSelectedProject(null);
+  };
+
   return (
     <div>
-      {selectedProject && <Project selectedData={selectedData} />}
+      {selectedProject && (
+        <Project selectedData={selectedData} onClose={handleProjectClose} />
+      )}
 
       <GridContainer>
         {data.map((project) => (
