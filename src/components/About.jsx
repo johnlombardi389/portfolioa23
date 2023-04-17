@@ -27,7 +27,7 @@ const About = () => {
       <img src={aboutBanner} alt="About Me" />
       <AboutInfo>
         <AboutContact>
-          <h1>About Me</h1>
+          <h2>About Me</h2>
           <p>
             I grew up immersing myself in video game worlds where your character
             was always growing and learning new skills. Just like an RPG, I've
@@ -45,13 +45,13 @@ const About = () => {
             (MongoDB, Express, React, Node).
           </p>
 
-          <h1>Contact</h1>
+          <h2>Contact</h2>
           <p>Email:</p>
           <p>LinkedIn:</p>
         </AboutContact>
 
         <AboutTools>
-          <h1>Toolkit</h1>
+          <h2>Toolkit</h2>
           <ul>
             <li>
               <SiReact />
@@ -114,10 +114,9 @@ const AboutContainer = styled(motion.div)`
   height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-
-  margin: 1rem auto;
+  margin: 0 auto;
 
   img {
     width: 100%;
@@ -128,10 +127,9 @@ const AboutContainer = styled(motion.div)`
 
 const AboutInfo = styled(motion.div)`
   display: flex;
-  justify-content: space-between;
   align-items: start;
   width: 100%;
-  margin: 3rem auto;
+  margin: 2rem 0 2rem 5rem;
 `;
 
 const AboutContact = styled(motion.div)`
@@ -147,7 +145,10 @@ const AboutContact = styled(motion.div)`
 
   p {
     margin: 0.75rem 5rem 0.75rem 0;
-    color: white;
+    color: #f4e7dc;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
   }
 `;
 
@@ -181,7 +182,7 @@ const AboutTools = styled(motion.div)`
       padding: 1rem 2rem 1rem 0rem;
 
       svg {
-        color: green;
+        color: #0f3962;
         width: 3rem;
         height: 3rem;
         transition: all 0.5s ease;
@@ -193,19 +194,22 @@ const AboutTools = styled(motion.div)`
         transition: all 0.5s ease;
         opacity: 0;
         color: transparent;
-        font-family: sans-serif;
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 200;
+        font-size: 0.85rem;
         z-index: -1;
+        transition: all 0.5s ease;
       }
 
       &:hover {
         top: -10px;
         svg {
-          color: red;
+          color: #f9c04d;
         }
         span {
           opacity: 1;
           margin-top: 5rem;
-          color: red;
+          color: #f9c04d;
         }
       }
     }

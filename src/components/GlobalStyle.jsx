@@ -29,6 +29,14 @@ font-weight: 700; */
     text-transform: uppercase;
   }
 
+  h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #0F3962;
+    text-transform: uppercase;
+  }
+
   h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
