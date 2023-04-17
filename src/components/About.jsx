@@ -46,10 +46,8 @@ const About = () => {
           </p>
 
           <h1>Contact</h1>
-          <p>
-            I am a Full Stack Web Developer with a passion for building websites
-            and applications.
-          </p>
+          <p>Email:</p>
+          <p>LinkedIn:</p>
         </AboutContact>
 
         <AboutTools>
@@ -148,7 +146,7 @@ const AboutContact = styled(motion.div)`
   }
 
   p {
-    margin: 0.75rem 0;
+    margin: 0.75rem 5rem 0.75rem 0;
     color: white;
   }
 `;
@@ -156,7 +154,7 @@ const AboutContact = styled(motion.div)`
 const AboutTools = styled(motion.div)`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
 
   h4 {
     padding-bottom: 3rem;
@@ -167,12 +165,11 @@ const AboutTools = styled(motion.div)`
   ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
 
     li {
-      padding: 1rem 2rem;
       position: relative;
       display: inline-block;
       top: 0;
@@ -181,6 +178,7 @@ const AboutTools = styled(motion.div)`
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 1rem 2rem 1rem 0rem;
 
       svg {
         color: green;
