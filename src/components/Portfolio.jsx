@@ -60,6 +60,14 @@ const Portfolio = ({ projectInfo, clickedName, setClickedName }) => {
                 ))}
               </ul>
             </CardInfo>
+            <Buttons>
+              <a href={project.demo} target="_blank" className="black-btn">
+                Project
+              </a>
+              <a href={project.github} target="_blank" className="white-btn">
+                Code
+              </a>
+            </Buttons>
           </GridItem>
         ))}
       </GridContainer>
@@ -149,6 +157,40 @@ const CardInfo = styled(motion.div)`
       font-size: 0.85rem;
       color: #0f3962;
     }
+  }
+`;
+
+const Buttons = styled(motion.div)`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20rem;
+  margin: 0 auto;
+
+  .black-btn {
+    background-color: black;
+  }
+
+  .white-btn {
+    background-color: white;
+  }
+
+  a {
+    display: inline-block;
+    margin: 0 1rem 1rem 1rem;
+    padding: 10px 0;
+    width: 15rem;
+    background-color: #4caf50;
+    color: blue;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+      rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+      rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   }
 `;
 
