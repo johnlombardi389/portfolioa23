@@ -15,12 +15,18 @@ import { AnimatePresence } from "framer-motion";
 function App() {
   const [projectInfo, setProjectData] = useState(projectData());
 
+  const [clickedName, setClickedName] = useState(false);
+
   return (
     <div className="App">
       <GlobalStyles />
-      <Nav />
+      <Nav clickedName={clickedName} setClickedName={setClickedName} />
       <AnimatePresence mode="wait">
-        <Portfolio projectInfo={projectInfo} />
+        <Portfolio
+          projectInfo={projectInfo}
+          clickedName={clickedName}
+          setClickedName={setClickedName}
+        />
       </AnimatePresence>
     </div>
   );

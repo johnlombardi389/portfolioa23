@@ -8,9 +8,10 @@ import { motion } from "framer-motion";
 import projectData from "./projectData";
 
 // Component
+import About from "./About";
 import Project from "./Project";
 
-const Portfolio = (projectInfo) => {
+const Portfolio = ({ projectInfo, clickedName, setClickedName }) => {
   const data = projectData();
 
   const [selectedProject, setSelectedProject] = useState(null);
@@ -24,12 +25,18 @@ const Portfolio = (projectInfo) => {
     });
   };
 
+  const handleAboutClose = () => {
+    setOpenAbout(false);
+  };
+
   const handleProjectClose = () => {
     setSelectedProject(null);
   };
 
   return (
     <div>
+      {clickedName && <About onClose={handleAboutClose} />}
+
       {selectedProject && (
         <Project selectedData={selectedData} onClose={handleProjectClose} />
       )}

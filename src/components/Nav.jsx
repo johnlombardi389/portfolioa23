@@ -7,7 +7,11 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { FaEnvelope } from "react-icons/fa";
 import johnlogo from "../assets/johnlogo.png";
 
-const Nav = () => {
+const Nav = ({ clickedName, setClickedName }) => {
+  const handleAboutClose = () => {
+    setClickedName((prevState) => !prevState);
+  };
+
   return (
     <StyledNav>
       <LogoSection>
@@ -44,7 +48,7 @@ const Nav = () => {
         </SocialNav>
       </LogoSection>
 
-      <MyName>John Lombardi</MyName>
+      <MyName onClick={() => handleAboutClose()}>John Lombardi</MyName>
     </StyledNav>
   );
 };
@@ -111,6 +115,12 @@ const SocialNav = styled(motion.ul)`
 const MyName = styled(motion.h1)`
   font-size: 3rem;
   color: #0f3962;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: #24709c;
+  }
 `;
 
 export default Nav;
