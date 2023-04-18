@@ -119,8 +119,6 @@ const GridItem = styled(motion.div)`
   justify-content: center;
   align-items: center;
   height: auto;
-  background-color: blue;
-  cursor: pointer;
   overflow: hidden;
 
   img {
@@ -139,6 +137,7 @@ const CardInfo = styled(motion.div)`
   h3 {
     margin-right: 2rem;
     color: #152339;
+    font-size: 1.25rem;
   }
 
   ul {
@@ -166,13 +165,25 @@ const Buttons = styled(motion.div)`
   align-items: center;
   width: 30rem;
   margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
 
   .black-btn {
-    background-color: black;
+    background-color: #152339;
+    color: #fb4c8b;
+
+    &:hover {
+      color: #f9c04d;
+    }
   }
 
   .white-btn {
-    background-color: white;
+    background-color: #152339;
+    color: #fb4c8b;
+
+    &:hover {
+      color: #f9c04d;
+    }
   }
 
   a {
@@ -181,11 +192,10 @@ const Buttons = styled(motion.div)`
     padding: 10px 0;
     width: 10rem;
     background-color: #4caf50;
-    color: blue;
     text-align: center;
     text-decoration: none;
     font-size: 1rem;
-    border-radius: 4px;
+    border-radius: 1rem;
     border: none;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
