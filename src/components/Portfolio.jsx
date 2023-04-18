@@ -164,7 +164,7 @@ const Buttons = styled(motion.div)`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 20rem;
+  width: 30rem;
   margin: 0 auto;
 
   .black-btn {
@@ -179,7 +179,7 @@ const Buttons = styled(motion.div)`
     display: inline-block;
     margin: 0 1rem 1rem 1rem;
     padding: 10px 0;
-    width: 15rem;
+    width: 10rem;
     background-color: #4caf50;
     color: blue;
     text-align: center;
