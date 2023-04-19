@@ -6,6 +6,10 @@ import rockPaper from "../assets/rockPaper.png";
 import signUp from "../assets/signUp.png";
 import travelApp from "../assets/travelApp.png";
 
+// Videos
+import pumpkinvideo from "../assets/pumpkinvideo.mp4";
+
+// Icons
 import {
   SiReact,
   SiJavascript,
@@ -37,6 +41,7 @@ const projectData = () => [
       <SiGit />,
       <SiFigma />,
     ],
+    video: pumpkinvideo,
   },
   {
     id: 2,
@@ -57,6 +62,7 @@ const projectData = () => [
       <SiGit />,
       <SiFigma />,
     ],
+    video: pumpkinvideo,
   },
   {
     id: 3,
@@ -77,6 +83,7 @@ const projectData = () => [
       <SiGit />,
       <SiVisualstudiocode />,
     ],
+    video: pumpkinvideo,
   },
   {
     id: 4,
@@ -97,6 +104,7 @@ const projectData = () => [
       <SiGit />,
       <SiFigma />,
     ],
+    video: pumpkinvideo,
   },
   {
     id: 5,
@@ -118,6 +126,7 @@ const projectData = () => [
       <SiGit />,
       <SiFigma />,
     ],
+    video: pumpkinvideo,
   },
   {
     id: 6,
@@ -136,6 +145,7 @@ const projectData = () => [
       <SiGit />,
       <SiFigma />,
     ],
+    video: pumpkinvideo,
   },
 ];
 

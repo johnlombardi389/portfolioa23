@@ -33,6 +33,15 @@ const Portfolio = ({ projectInfo, clickedName, setClickedName }) => {
     setSelectedProject(null);
   };
 
+  const handleVideoMouseOver = (event) => {
+    event.target.play();
+  };
+
+  const handleVideoMouseOut = (event) => {
+    event.target.pause();
+    event.target.currentTime = 0;
+  };
+
   return (
     <div>
       {clickedName && <About onClose={handleAboutClose} />}
@@ -52,6 +61,14 @@ const Portfolio = ({ projectInfo, clickedName, setClickedName }) => {
             }}
           >
             <img src={project.image} alt={project.title} />
+            <video
+              src={project.video}
+              preload="metadata"
+              onMouseOver={handleVideoMouseOver}
+              onMouseOut={handleVideoMouseOut}
+              muted
+              loop
+            />
             <CardInfo>
               <h3>{project.title}</h3>
               <ul>
