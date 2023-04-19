@@ -34,12 +34,12 @@ const Portfolio = ({ projectInfo, clickedName, setClickedName }) => {
   };
 
   const handleVideoMouseOver = (event) => {
-    event.target.play();
+    event.currentTarget.querySelector("video").play();
   };
 
   const handleVideoMouseOut = (event) => {
-    event.target.pause();
-    event.target.currentTime = 0;
+    event.currentTarget.querySelector("video").pause();
+    event.currentTarget.querySelector("video").currentTime = 0;
   };
 
   return (
@@ -59,16 +59,11 @@ const Portfolio = ({ projectInfo, clickedName, setClickedName }) => {
               setSelectedProject(project.id);
               handleScrollToTop();
             }}
+            onMouseOver={handleVideoMouseOver}
+            onMouseOut={handleVideoMouseOut}
           >
-            <img src={project.image} alt={project.title} />
-            <video
-              src={project.video}
-              preload="metadata"
-              onMouseOver={handleVideoMouseOver}
-              onMouseOut={handleVideoMouseOut}
-              muted
-              loop
-            />
+            {/* <img src={project.image} alt={project.title} /> */}
+            <video src={project.video} preload="metadata" muted loop />
             <CardInfo>
               <h3>{project.title}</h3>
               <ul>
@@ -138,7 +133,14 @@ const GridItem = styled(motion.div)`
   height: auto;
   overflow: hidden;
 
-  img {
+  /* img {
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  } */
+
+  video {
     padding: 1rem;
     width: 100%;
     height: auto;
