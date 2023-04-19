@@ -91,8 +91,9 @@ const GridContainer = styled(motion.div)`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-gap: 3rem;
-  margin: 0 auto;
+  margin: 5rem auto;
   max-width: 1800px;
+  height: auto;
 
   .pink {
     background-color: #fb4c8b;
