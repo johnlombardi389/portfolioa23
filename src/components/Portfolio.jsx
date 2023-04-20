@@ -93,6 +93,17 @@ const GridContainer = styled(motion.div)`
   max-width: 1800px;
   height: auto;
 
+  @media only screen and (max-width: 1850px) {
+    margin: 0 2rem;
+    grid-gap: 2rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 2rem 0;
+    grid-gap: 1rem;
+  }
+
   .pink {
     background-color: #fb4c8b;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);

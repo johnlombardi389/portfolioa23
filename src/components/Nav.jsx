@@ -60,6 +60,15 @@ const StyledNav = styled(motion.nav)`
   align-items: center;
   margin: 1rem auto 2.5rem auto;
   max-width: 1800px;
+
+  @media only screen and (max-width: 1850px) {
+    margin: 0 2rem;
+  }
+
+  @media only screen and (max-width: 815px) {
+    flex-direction: column;
+    margin: 2rem 0;
+  }
 `;
 
 const LogoSection = styled(motion.div)`
@@ -95,6 +104,11 @@ const SocialNav = styled(motion.ul)`
       svg {
         width: 2rem;
         height: 2rem;
+
+        @media only screen and (max-width: 380px) {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
       }
 
       &:hover {
@@ -117,6 +131,14 @@ const MyName = styled(motion.h1)`
   color: #24709c;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+
+  @media only screen and (max-width: 815px) {
+    margin-top: 2rem;
+  }
+
+  @media only screen and (max-width: 380px) {
+    font-size: 2rem;
+  }
 
   &:hover {
     color: #24709c;
