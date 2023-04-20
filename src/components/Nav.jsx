@@ -84,12 +84,12 @@ const SocialNav = styled(motion.ul)`
   li {
     margin: 0 0.5rem;
     padding: 0 0.5rem;
-    color: #0f3962;
+    color: #24709c;
     cursor: pointer;
 
     a {
       text-decoration: none;
-      color: #0f3962;
+      color: #24709c;
       transition: all 0.3s ease-in-out;
 
       svg {
@@ -108,13 +108,13 @@ const SocialNav = styled(motion.ul)`
     display: block;
     width: 7rem;
     height: 0.1rem;
-    background-color: #0f3962;
+    background-color: #24709c;
   }
 `;
 
 const MyName = styled(motion.h1)`
   font-size: 3rem;
-  color: #0f3962;
+  color: #24709c;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 

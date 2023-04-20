@@ -9,14 +9,13 @@ import projectData from "./projectData";
 
 // Component
 import About from "./About";
-import Project from "./Project";
 
 const Portfolio = ({ projectInfo, clickedName, setClickedName }) => {
   const data = projectData();
 
-  const [selectedProject, setSelectedProject] = useState(null);
+  // const [selectedProject, setSelectedProject] = useState(null);
 
-  const selectedData = data.filter((project) => project.id === selectedProject);
+  // const selectedData = data.filter((project) => project.id === selectedProject);
 
   const handleScrollToTop = () => {
     window.scrollTo({
@@ -46,9 +45,9 @@ const Portfolio = ({ projectInfo, clickedName, setClickedName }) => {
     <div>
       {clickedName && <About onClose={handleAboutClose} />}
 
-      {selectedProject && (
+      {/* {selectedProject && (
         <Project selectedData={selectedData} onClose={handleProjectClose} />
-      )}
+      )} */}
 
       <GridContainer>
         {data.map((project) => (
@@ -62,7 +61,6 @@ const Portfolio = ({ projectInfo, clickedName, setClickedName }) => {
             onMouseOver={handleVideoMouseOver}
             onMouseOut={handleVideoMouseOut}
           >
-            {/* <img src={project.image} alt={project.title} /> */}
             <video src={project.video} preload="metadata" muted loop />
             <CardInfo>
               <h3>{project.title}</h3>
@@ -189,8 +187,8 @@ const Buttons = styled(motion.div)`
   font-weight: 700;
 
   .black-btn {
-    background-color: #152339;
-    color: #fb4c8b;
+    background-color: #0e1624;
+    color: #24709c;
 
     &:hover {
       color: #f9c04d;
@@ -198,8 +196,8 @@ const Buttons = styled(motion.div)`
   }
 
   .white-btn {
-    background-color: #152339;
-    color: #fb4c8b;
+    background-color: #0e1624;
+    color: #24709c;
 
     &:hover {
       color: #f9c04d;
