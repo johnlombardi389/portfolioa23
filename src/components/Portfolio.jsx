@@ -143,18 +143,15 @@ const GridItem = styled(motion.div)`
   height: auto;
   overflow: hidden;
 
-  /* img {
-    padding: 1rem;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  } */
-
   video {
     padding: 1rem;
     width: 100%;
     height: auto;
     object-fit: cover;
+
+    @media only screen and (max-width: 550px) {
+      padding: 0.5rem 0;
+    }
   }
 `;
 
@@ -167,6 +164,11 @@ const CardInfo = styled(motion.div)`
     margin-right: 2rem;
     color: #152339;
     font-size: 1.25rem;
+
+    @media only screen and (max-width: 550px) {
+      margin-right: 0.5rem;
+      font-size: 1rem;
+    }
   }
 
   ul {
@@ -178,12 +180,21 @@ const CardInfo = styled(motion.div)`
     margin: 0;
     margin-left: 1rem;
 
+    @media only screen and (max-width: 550px) {
+      margin-left: 0.5rem;
+    }
+
     li {
       padding: 0.5rem;
       font-family: "Nunito Sans", sans-serif;
       font-weight: 400;
       font-size: 0.85rem;
       color: #0f3962;
+
+      @media only screen and (max-width: 550px) {
+        padding: 0.25rem;
+        font-size: 0.75rem;
+      }
     }
   }
 `;
@@ -196,6 +207,10 @@ const Buttons = styled(motion.div)`
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
+
+  @media only screen and (max-width: 550px) {
+    width: 20rem;
+  }
 
   .black-btn {
     background-color: #0e1624;
