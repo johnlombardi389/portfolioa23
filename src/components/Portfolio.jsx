@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 // Style
 import styled from "styled-components";
 import { motion } from "framer-motion";
@@ -12,10 +10,6 @@ import About from "./About";
 
 const Portfolio = ({ projectInfo, clickedName, setClickedName }) => {
   const data = projectData();
-
-  // const [selectedProject, setSelectedProject] = useState(null);
-
-  // const selectedData = data.filter((project) => project.id === selectedProject);
 
   const handleScrollToTop = () => {
     window.scrollTo({
@@ -45,10 +39,6 @@ const Portfolio = ({ projectInfo, clickedName, setClickedName }) => {
     <div>
       {clickedName && <About onClose={handleAboutClose} />}
 
-      {/* {selectedProject && (
-        <Project selectedData={selectedData} onClose={handleProjectClose} />
-      )} */}
-
       <GridContainer>
         {data.map((project) => (
           <GridItem
@@ -71,10 +61,10 @@ const Portfolio = ({ projectInfo, clickedName, setClickedName }) => {
               </ul>
             </CardInfo>
             <Buttons>
-              <a href={project.demo} target="_blank" className="black-btn">
+              <a href={project.demo} target="_blank" className="btndemo">
                 Project
               </a>
-              <a href={project.github} target="_blank" className="white-btn">
+              <a href={project.github} target="_blank" className="btncode">
                 Code
               </a>
             </Buttons>
@@ -212,7 +202,7 @@ const Buttons = styled(motion.div)`
     width: 20rem;
   }
 
-  .black-btn {
+  .btndemo {
     background-color: #0e1624;
     color: #24709c;
 
@@ -221,7 +211,7 @@ const Buttons = styled(motion.div)`
     }
   }
 
-  .white-btn {
+  .btncode {
     background-color: #0e1624;
     color: #24709c;
 
