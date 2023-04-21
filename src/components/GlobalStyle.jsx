@@ -21,6 +21,7 @@ font-weight: 700; */
 
   html {
     background-color: #0E1624;
+    overflow-y: scroll;
   }
 
   h1 {
