@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 // Icons
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { FaEnvelope } from "react-icons/fa";
-import johnlogo from "../assets/johnlogo.png";
+import johnLogo from "../assets/johnLogo.svg";
 
 const Nav = ({ clickedName, setClickedName }) => {
   const handleAboutClose = () => {
@@ -15,7 +15,7 @@ const Nav = ({ clickedName, setClickedName }) => {
   return (
     <StyledNav>
       <LogoSection>
-        <img src={johnlogo} alt="John's Logo" />
+        <img src={johnLogo} alt="John's Logo" />
 
         <SocialNav>
           <motion.li>
@@ -79,7 +79,7 @@ const LogoSection = styled(motion.div)`
 
   img {
     width: auto;
-    height: 1.5rem;
+    height: 2rem;
     padding-right: 1rem;
   }
 `;
