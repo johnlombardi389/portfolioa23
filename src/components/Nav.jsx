@@ -112,7 +112,7 @@ const SocialNav = styled(motion.ul)`
       }
 
       &:hover {
-        color: #24709c;
+        color: #f9c04d;
       }
     }
   }
@@ -141,7 +141,7 @@ const MyName = styled(motion.h1)`
   }
 
   &:hover {
-    color: #24709c;
+    color: #f9c04d;
   }
 `;
 

@@ -205,6 +205,7 @@ const Buttons = styled(motion.div)`
   .btndemo {
     background-color: #0e1624;
     color: #24709c;
+    transition: color 0.3s ease;
 
     &:hover {
       color: #f9c04d;

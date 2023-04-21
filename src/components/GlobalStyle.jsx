@@ -33,8 +33,9 @@ font-weight: 700; */
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
-    color: #0F3962;
+    color: #f9c04d;
     text-transform: uppercase;
+    margin: 1rem 0;
   }
 
   h3 {

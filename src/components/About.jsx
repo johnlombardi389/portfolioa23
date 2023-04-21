@@ -129,7 +129,15 @@ const AboutInfo = styled(motion.div)`
   display: flex;
   align-items: start;
   width: 100%;
-  margin: 2rem 0 2rem 5rem;
+  margin: 3rem 0 3rem 5rem;
+
+  @media only screen and (max-width: 1050px) {
+    margin: 1rem 0 1rem 2rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
 
 const AboutContact = styled(motion.div)`
@@ -140,11 +148,10 @@ const AboutContact = styled(motion.div)`
 
   h1 {
     text-align: center;
-    color: white;
   }
 
   p {
-    margin: 0.75rem 5rem 0.75rem 0;
+    margin: 1rem 5rem 1rem 0;
     color: #f4e7dc;
     font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
@@ -160,7 +167,6 @@ const AboutTools = styled(motion.div)`
   h4 {
     padding-bottom: 3rem;
     font-family: sans-serif;
-    color: red;
   }
 
   ul {
@@ -183,8 +189,8 @@ const AboutTools = styled(motion.div)`
 
       svg {
         color: #0f3962;
-        width: 3rem;
-        height: 3rem;
+        width: 2.5rem;
+        height: 2.5rem;
         transition: all 0.5s ease;
         z-index: 5;
       }
@@ -196,13 +202,13 @@ const AboutTools = styled(motion.div)`
         color: transparent;
         font-family: "Nunito Sans", sans-serif;
         font-weight: 200;
-        font-size: 0.85rem;
+        font-size: 1rem;
         z-index: -1;
         transition: all 0.5s ease;
       }
 
       &:hover {
-        top: -10px;
+        top: -8px;
         svg {
           color: #f9c04d;
         }
