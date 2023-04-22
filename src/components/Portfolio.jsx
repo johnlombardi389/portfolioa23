@@ -8,6 +8,9 @@ import projectData from "./projectData";
 // Component
 import About from "./About";
 
+// Animations
+import { pageAnimation } from "/animation.jsx";
+
 const Portfolio = ({ projectInfo, clickedName, setClickedName }) => {
   const data = projectData();
 
@@ -39,7 +42,12 @@ const Portfolio = ({ projectInfo, clickedName, setClickedName }) => {
     <div>
       {clickedName && <About onClose={handleAboutClose} />}
 
-      <GridContainer>
+      <GridContainer
+        variants={pageAnimation}
+        initial="hidden"
+        animate="show"
+        exit="exit"
+      >
         {data.map((project) => (
           <GridItem
             key={project.id}

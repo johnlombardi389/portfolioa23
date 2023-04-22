@@ -5,6 +5,9 @@ import { motion } from "framer-motion";
 // Image
 import aboutBanner from "../assets/aboutBanner.png";
 
+// Animations
+import { pageAnimation } from "/animation.jsx";
+
 // Icons
 import {
   SiReact,
@@ -23,7 +26,12 @@ import {
 
 const About = () => {
   return (
-    <AboutContainer>
+    <AboutContainer
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+    >
       <img src={aboutBanner} alt="About Me" />
       <AboutInfo>
         <AboutContact>
