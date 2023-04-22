@@ -54,8 +54,28 @@ const About = () => {
           </p>
 
           <h2>Contact</h2>
-          <p>Email:</p>
-          <p>LinkedIn:</p>
+          <p>
+            Email:{" "}
+            <a
+              href="mailto:johnlombardi389@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              className="textLink"
+            >
+              johnlombardi389@gmail.com
+            </a>
+          </p>
+          <p>
+            LinkedIn:{" "}
+            <a
+              href="https://www.linkedin.com/in/johnlombardi389/"
+              target="_blank"
+              rel="noreferrer"
+              className="textLink"
+            >
+              https://www.linkedin.com/in/johnlombardi389/
+            </a>
+          </p>
         </AboutContact>
 
         <AboutTools>
@@ -164,6 +184,10 @@ const AboutContact = styled(motion.div)`
     font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
     font-size: 1rem;
+
+    .textLink {
+      color: #24709c;
+    }
   }
 `;
 
